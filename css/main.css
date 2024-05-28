@@ -1,97 +1,117 @@
+/* Set global styles for the body element */
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: rgb(223, 217, 217);
-  margin: 0;
-  padding: 0;
+  font-family: 'Roboto', Helvetica, sans-serif; /* Use Roboto font with fallbacks */
+  background-color: rgb(223, 217, 217); /* Light grey background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+/* Styles for skip links (used for accessibility) */
 .skip-links {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  background: #000;
-  color: #fff;
-  padding: 8px;
-  z-index: 100;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  position: absolute; /* Position absolute to place it precisely */
+  top: -10px; /* Initially position it off-screen */
+  left: 0; /* Align to the left edge of the screen */
+  background: #000; /* Black background */
+  color: #fff; /* White text color */
+  padding: 8px; /* Add padding around the links */
+  z-index: 100; /* Ensure it's above other elements */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+/* Margin for each list item in the skip links */
 .skip-links li {
-  margin-bottom: 4px;
+  margin-bottom: 4px; /* Space between list items */
 }
+
+/* Styles for each skip link */
 .skip-links a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 8px;
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links block elements */
+  padding: 8px; /* Add padding inside the links */
 }
+
+/* Styles for focused skip links */
 .skip-links a:focus {
-  top: 0;
-  background: #333;
-  outline: 2px solid #fff;
-  text-decoration: underline;
+  top: 0; /* Bring it back into view when focused */
+  background: #333; /* Dark grey background when focused */
+  outline: 2px solid #fff; /* White outline for accessibility */
+  text-decoration: underline; /* Underline the text */
 }
+
+/* Font family for all heading elements */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif; /* Custom fonts for headings */
 }
 
+/* Container class to center content and add padding */
 .container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: 1080px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Horizontal padding */
 }
 
+/* Ensure images take full width of their container */
 img {
-  width: 100%;
+  width: 100%; /* Images will be responsive and take full width */
 }
 
+/* Styles for the main navigation menu */
 .main-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
+/* Each navigation item in the menu */
 .main-nav ul li {
-  flex: 1;
-  text-align: center;
+  flex: 1; /* Make each item take an equal amount of space */
+  text-align: center; /* Center text within each item */
 }
 
+/* Styles for links in the navigation menu */
 .main-nav ul li a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.25rem;
+  display: block; /* Make links block elements */
+  color: inherit; /* Inherit text color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.25rem; /* Increase font size */
 }
 
+/* Styles for form inputs and textareas */
 form input,
 form textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  display: block; /* Make form elements block elements */
+  width: 100%; /* Full width */
+  margin-bottom: 1rem; /* Space below each element */
+  padding: .5rem 1rem; /* Padding inside the elements */
 }
 
+/* Specific styles for textareas */
 form textarea {
-  min-height: 150px;
-  max-height: 150px;
-  height: 150px;
-  resize: none;
+  min-height: 150px; /* Minimum height */
+  max-height: 150px; /* Maximum height */
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
 }
 
+/* Styles for form buttons */
 form button {
-  background: none;
-  border: 2px solid black;
-  padding: 1rem;
-  text-transform: uppercase;
+  background: none; /* Transparent background */
+  border: 2px solid black; /* Black border */
+  padding: 1rem; /* Padding inside the button */
+  text-transform: uppercase; /* Uppercase text */
 }
 
+/* Styles for the site footer */
 .site-footer {
-  padding: 2rem 0;
+  padding: 2rem 0; /* Vertical padding */
 }
